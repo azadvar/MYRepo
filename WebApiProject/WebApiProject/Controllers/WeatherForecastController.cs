@@ -29,5 +29,17 @@ namespace WebApiProject.Controllers
             })
             .ToArray();
         }
+        [HttpGet(" GetWeatherForecastById/{id}")]
+        public IEnumerable<WeatherForecast> GetBYId(int id)
+        {
+            return Enumerable.Range(1, id).Select(index => new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(index),
+                TemperatureC = Random.Shared.Next(-20, 55),
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
+
     }
 }
