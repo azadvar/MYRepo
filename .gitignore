@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MySampelProject
+/AntonParrTestProject
+/LagerTestProject/bin/Debug
+/LagerTestProject/data
+/LagerTestProject/obj
+/LagerTestProject/LagerTestProject/bin/Debug/net6.0
+/LagerTestProject/LagerTestProject/obj
